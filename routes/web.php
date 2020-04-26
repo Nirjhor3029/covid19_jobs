@@ -32,3 +32,5 @@ Route::resource('users', 'UserController');
 Route::resource('areas', 'AreaController');
 
 Route::resource('givers', 'GiverController');
+
+Route::resource('seekers', 'SeekerController');
