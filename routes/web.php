@@ -30,3 +30,5 @@ Route::get('/home', 'HomeController@index')->middleware('verified');
 Route::resource('users', 'UserController');
 
 Route::resource('areas', 'AreaController');
+
+Route::resource('givers', 'GiverController');
