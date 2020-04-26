@@ -6,22 +6,20 @@ use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
- * Class User
+ * Class Area
  * @package App\Models
- * @version April 25, 2020, 3:13 pm UTC
+ * @version April 26, 2020, 7:35 am UTC
  *
+ * @property integer $upazilla_id
  * @property string $name
- * @property string $email
- * @property string|\Carbon\Carbon $email_verified_at
- * @property string $password
- * @property string $role
- * @property string $remember_token
+ * @property string $bn_name
+ * @property string $url
  */
-class User extends Model
+class Area extends Model
 {
     use SoftDeletes;
 
-    public $table = 'users';
+    public $table = 'areas';
     
     const CREATED_AT = 'created_at';
     const UPDATED_AT = 'updated_at';
@@ -32,12 +30,10 @@ class User extends Model
 
 
     public $fillable = [
+        'upazilla_id',
         'name',
-        'email',
-        'email_verified_at',
-        'password',
-        'role',
-        'remember_token'
+        'bn_name',
+        'url'
     ];
 
     /**
@@ -47,12 +43,10 @@ class User extends Model
      */
     protected $casts = [
         'id' => 'integer',
+        'upazilla_id' => 'integer',
         'name' => 'string',
-        'email' => 'string',
-        'email_verified_at' => 'datetime',
-        'password' => 'string',
-        'role' => 'string',
-        'remember_token' => 'string'
+        'bn_name' => 'string',
+        'url' => 'string'
     ];
 
     /**
@@ -61,10 +55,9 @@ class User extends Model
      * @var array
      */
     public static $rules = [
+        'upazilla_id' => 'required',
         'name' => 'required',
-        'email' => 'required',
-        'password' => 'required',
-        // 'role' => 'required'
+        'url' => 'required'
     ];
 
     
