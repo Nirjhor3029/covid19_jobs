@@ -1,0 +1,259 @@
+/** first page button color**/
+
+/** tab color **/
+
+/******** input color *****/
+
+/***************** mehrab Custom Css ****************/
+
+/************************ start header ****************/
+
+.mheader-icon i {
+  font-size: 30px;
+  color: red;
+}
+
+.mnav-bar {
+  background: #15AABF;
+  min-height: 50px;
+}
+
+.mheader-logo {
+  width: 50px;
+  height: 40px;
+  float: right;
+}
+
+.mmenu-header-contianer {
+  float: right;
+  position: relative;
+}
+
+.mmenu-header-contianer .menuContainer {
+  background: #B8C1CD;
+  width: 250px;
+  min-height: 250px;
+  position: absolute;
+  right: 0;
+  top: 53px;
+  border-top: 0.5px solid silver;
+  z-index: 222;
+  padding: 0px 20px 20px 20px;
+  box-sizing: border-box;
+  display: none;
+}
+
+.mmenu-header-contianer .menuContainer::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid white;
+  position: absolute;
+  right: 0px;
+  margin-top: -9px;
+}
+
+.mmenu-header-contianer .muser-icon-circle {
+  font-size: 30px;
+  float: right;
+  margin: 3px 0px;
+  color: white;
+}
+
+.menuContainer .mIcon-circle {
+  width: 70px;
+  height: 70px;
+  background: white;
+  border-radius: 70px;
+  display: block;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.menuContainer .mIcon-circle i {
+  font-size: 30px;
+  font-weight: 200;
+  color: #97A2B3;
+}
+
+.menuContainer h5 {
+  font-size: 14px;
+  font-weight: 200;
+  color: white;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.menuContainer h3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.menuContainer a {
+  display: block;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+/************************ end header ****************/
+
+body {
+  background: white;
+  font-size: 14px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.mindex-wapper {
+  margin-top: 70px;
+}
+
+.mbtn-index {
+  padding: 10px 30px;
+  color: #fff;
+  background: #15AABF;
+  border-radius: 20px;
+  border-color: #15AABF;
+  display: block;
+  width: 100%;
+  margin-top: 28px;
+  font-size: 18px;
+  font-weight: 100;
+  transition: all 0.5s ease 0s;
+}
+
+.mbtn-index:hover {
+  transition: all 0.5s ease 0s;
+  background: #B8C1CD;
+  color: #fff;
+}
+
+.mehrab-index-button-group {
+  padding: 50px 20px;
+}
+
+/***
+$tabActiveBack : #228AE6;
+$tabColor : white;
+$tabBack : #15AABF;
+$tabBorderColor : #15AABF;
+**/
+
+/*********** start add single worker page *******/
+
+.tabButton {
+  color: white;
+  background: #228AE6;
+  border-color: #15AABF;
+  padding: 7px 15px !important;
+  border-radius: 5px 5px 0px 0px;
+  margin-right: 5px;
+}
+
+.mnav-tabs .active {
+  background: #15AABF !important;
+  color: white !important;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #15AABF !important;
+}
+
+.mtab-content {
+  border-left: 1px solid #15AABF !important;
+  border-right: 1px solid #15AABF !important;
+  border-bottom: 1px solid #15AABF !important;
+  padding-bottom: 50px;
+}
+
+.m-input {
+  background: #D9E0E8;
+  padding: 6px 10px;
+  border-radius: 3px;
+  width: 100%;
+  margin-top: 15px;
+  border: none;
+}
+
+.m-select {
+  background: #D9E0E8;
+  padding: 6px 10px;
+  border-radius: 3px;
+  width: 100%;
+  margin-top: 15px;
+  border: none;
+}
+
+.m-checkbox {
+  margin-right: 7px;
+  display: inline-block;
+}
+
+/*****************start add Seeker page***********************/
+
+.m-tableContainer {
+  max-height: 300px;
+  height: 300px;
+  overflow-y: auto;
+}
+
+.m-tableContainer table {
+  width: 100%;
+  border: none;
+}
+
+.m-tableContainer table thead {
+  background: #B8C1CD !important;
+  color: white !important;
+}
+
+.m-tableContainer > table > thead > tr {
+  background: #B8C1CD !important;
+  color: white;
+}
+
+.m-tableContainer > table > thead > tr,
+td {
+  padding: 10px !important;
+  background: transparent;
+}
+
+.m-tableContainer > table > tbody > tr {
+  padding: 10px;
+  color: black;
+  background: #D9E0E8;
+}
+
+.m-tableContainer > table > tbody > tr,
+td {
+  border-bottom: 0.5px solid white;
+  border-left: 0.5px solid white;
+}
+
+/**** table scroll bar ***********/
+
+.m-tableContainer::-webkit-scrollbar {
+  width: 5px;
+}
+
+.m-tableContainer::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.m-tableContainer::-webkit-scrollbar-thumb {
+  background-color: #B8C1CD;
+  outline: 0.5px solid #B8C1CD;
+}
+
+/**** table scroll bar ***********/
+

@@ -1,0 +1,296 @@
+/** first page button color**/
+$colorBlack : #000;
+$colorWhite : #fff;
+$buttonBack : #15AABF;
+$buttonHov : #B8C1CD;
+$buttonHovColor : #fff;
+
+/** tab color **/
+$tabActiveBack : #15AABF;
+$tabColor : white;
+$tabBack : #228AE6;
+$tabBorderColor : #15AABF;
+
+$marginTop: 50px;
+$buttonBorderColor: #15AABF;
+$navbarBackColor : #15AABF;
+
+/******** input color *****/
+$inputBack: #D9E0E8;
+
+
+/***************** mehrab Custom Css ****************/
+@mixin radius($property) {
+    -webkit-border-radius: $property;
+    -ms-border-radius: $property;
+    border-radius: $property;
+
+}
+
+
+/************************ start header ****************/
+.mheader-icon i{
+    font-size: 30px;
+    color: red;
+}
+
+
+.mnav-bar{
+    background: $navbarBackColor;
+    min-height: 50px;
+}
+
+
+.mheader-logo{
+    width: 50px;
+    height: 40px;
+    float: right;
+}
+
+.mmenu-header-contianer{
+    float: right;
+    position: relative;
+}
+
+
+.mmenu-header-contianer .menuContainer{
+    background: #B8C1CD;
+    width: 250px;
+    min-height: 250px;
+    position: absolute;
+    right: 0;
+    top: 53px;
+    border-top: 0.5px solid silver;
+    z-index: 222;
+    padding:0px 20px 20px 20px;
+    box-sizing: border-box;
+    display: none;
+}
+
+
+.mmenu-header-contianer .menuContainer::before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid white;
+    position: absolute;
+    right: 0px;
+    margin-top: -9px;
+}
+
+.mmenu-header-contianer .muser-icon-circle{
+   font-size: 30px;
+    float: right;
+    margin: 3px 0px;
+    color:white;
+}
+
+
+
+.menuContainer .mIcon-circle{
+    width: 70px;
+    height: 70px;
+    background: white;
+    @include radius(70px);
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.menuContainer .mIcon-circle i{
+    font-size: 30px;
+    font-weight: 200;
+    color: #97A2B3;
+}
+
+.menuContainer h5{
+    font-size: 14px;
+    font-weight: 200;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.menuContainer h3{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.menuContainer a{
+    display: block;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+
+
+
+
+/************************ end header ****************/
+
+body{
+    background: white;
+    font-size: 14px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.mindex-wapper{
+    margin-top: 70px;
+}
+.mbtn-index{
+    padding: 10px 30px;
+    color: #fff;
+    background:$buttonBack;
+    @include radius(20px);
+    border-color: $buttonBack;
+    display: block;
+    width: 100%;
+    margin-top: 28px;
+    font-size: 18px;
+    font-weight: 100;
+    transition: all 0.5s ease 0s;
+}
+
+.mbtn-index:hover{
+    transition: all 0.5s ease 0s;
+    background: $buttonHov;
+    color: $buttonHovColor;
+}
+
+.mehrab-index-button-group{
+    padding: 50px 20px;
+}
+
+/***
+$tabActiveBack : #228AE6;
+$tabColor : white;
+$tabBack : #15AABF;
+$tabBorderColor : #15AABF;
+**/
+/*********** start add single worker page *******/
+.tabButton{
+   color: $tabColor;
+    background: $tabBack;
+    border-color: $tabBorderColor;
+    padding: 7px 15px !important;
+    @include radius(5px 5px 0px 0px);
+    margin-right: 5px;
+}
+
+.mnav-tabs .active{
+    background: $tabActiveBack !important;
+    color: white !important;
+}
+
+
+.nav-tabs {
+    border-bottom: 1px solid $tabBorderColor !important;
+}
+
+.mtab-content{
+    border-left: 1px solid $tabBorderColor !important;
+    border-right: 1px solid $tabBorderColor !important;
+    border-bottom: 1px solid $tabBorderColor !important;
+    padding-bottom: 50px;
+}
+
+
+
+.m-input{
+    background: $inputBack;
+    padding: 6px 10px;
+    @include radius(3px);
+    width:100%;
+    margin-top:15px;
+    border:none;
+}
+
+
+.m-select{
+    background: $inputBack;
+    padding: 6px 10px;
+    @include radius(3px);
+    width:100%;
+    margin-top:15px;
+    border:none;
+}
+.m-checkbox{
+    margin-right: 7px;
+    display: inline-block;
+}
+
+
+
+/*****************start add Seeker page***********************/
+
+.m-tableContainer{
+    max-height: 300px;
+    height: 300px;
+    overflow-y: auto;
+}
+
+.m-tableContainer table{
+    width: 100%;
+    border:none;
+}
+
+$tableTheadBack:#B8C1CD;
+$tableTheadTextColor:white;
+
+$tableColor:black;
+$tableTbodyRowBack:#D9E0E8;
+$tableBorderColor:white;
+$tableScrollbarColor:#B8C1CD;
+
+
+.m-tableContainer table thead{
+    background: $tableTheadBack !important;
+    color: $tableTheadTextColor !important;
+}
+
+.m-tableContainer > table > thead > tr{
+    background: $tableTheadBack !important;
+    color: $tableTheadTextColor;
+}
+.m-tableContainer > table > thead > tr,td{
+    padding: 10px !important;
+    background: transparent;
+}
+
+.m-tableContainer > table > tbody > tr{
+    padding: 10px;
+    color: $tableColor;
+    background: $tableTbodyRowBack;
+}
+
+.m-tableContainer > table > tbody > tr,td{
+    border-bottom:0.5px solid $tableBorderColor;
+    border-left:0.5px solid $tableBorderColor;
+}
+
+
+/**** table scroll bar ***********/
+.m-tableContainer::-webkit-scrollbar {
+    width: 5px;
+}
+
+.m-tableContainer::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.m-tableContainer::-webkit-scrollbar-thumb {
+    background-color: $tableScrollbarColor;
+    outline: 0.5px solid $tableScrollbarColor;
+}
+/**** table scroll bar ***********/

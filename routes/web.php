@@ -34,3 +34,10 @@ Route::resource('areas', 'AreaController');
 Route::resource('givers', 'GiverController');
 
 Route::resource('seekers', 'SeekerController');
+
+
+
+/*********************** practice route*******************/
+Route::get('home-view','DesignController@index');
+Route::get('add-single-worker','DesignController@addSingleWorker');
+Route::get('add-seeker','DesignController@addSeeker');
